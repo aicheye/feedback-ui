@@ -10,7 +10,8 @@ function AboutPage() {
           This project is a simple feedback form that allows users to submit
           feedback and view feedback statistics.
         </p>
-        <p>It is built with React and Framer Motion.</p>
+        <p>The front end is built with pure React and Framer Motion.</p>
+        <p>The back end is built with Firebase and Firestore.</p>
         <p>Version: 1.0.0</p>
 
         <p>
