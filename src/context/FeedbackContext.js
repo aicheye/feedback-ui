@@ -43,7 +43,7 @@ export const FeedbackProvider = ({ children }) => {
 
   useEffect(() => {
     unsubscribe();
-  }, []);
+  });
 
   const [feedbackEdit, setFeedbackEdit] = useState({
     item: {},
