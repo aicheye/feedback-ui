@@ -11,9 +11,11 @@ function AboutPage() {
           feedback and view feedback statistics.
         </p>
         <p>
-          The frontend is built with Javascript, NodeJS, React 18, and Framer
-          Motion. The backend is on Google Firebase and Cloud Firestore. It is
-          currently set to read-only for safety reasons.
+          This project is being deployed using continuous deployment on Netlify
+          and is hosted on Netlify's DNS Service. The frontend is built with
+          Javascript, NodeJS, React 18, and Framer Motion. The backend is on
+          Google Firebase and Cloud Firestore. It is currently set to read-only
+          for safety reasons.
         </p>
         <p>
           This project was made as part of Brad Traversy's React Front To Back
