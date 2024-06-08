@@ -33,16 +33,16 @@ export const FeedbackProvider = ({ children }) => {
 
   const q = query(coll);
 
-  const unsubscribe = onSnapshot(q, (querySnapshot) => {
-    const feedbackData = [];
-    querySnapshot.forEach((doc) => {
-      feedbackData.push({ id: doc.id, ...doc.data() });
-    });
-    setFeedback(feedbackData);
-  });
-
   useEffect(() => {
-    unsubscribe();
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      const feedbackData = [];
+      querySnapshot.forEach((doc) => {
+        feedbackData.push({ id: doc.id, ...doc.data() });
+      });
+      setFeedback(feedbackData);
+    });
+
+    return () => unsubscribe();
   });
 
   const [feedbackEdit, setFeedbackEdit] = useState({
