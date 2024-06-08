@@ -13,13 +13,13 @@ import { createContext, useEffect, useState } from "react";
 import { ulid } from "ulid";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCJiArvtMXKksWzdpluEJA_VfKtTa-bLBA",
-  authDomain: "feedback-ui-c89e6.firebaseapp.com",
-  projectId: "feedback-ui-c89e6",
-  storageBucket: "feedback-ui-c89e6.appspot.com",
-  messagingSenderId: "468212009839",
-  appId: "1:468212009839:web:a302e3562d5b91d9b8b69a",
-  measurementId: "G-FE6KZKPSXB",
+  apiKey: "AIzaSyB7kjjmWhViOYqy527Ya_EQnjBys9eURxE",
+  authDomain: "feedback-ui-db007.firebaseapp.com",
+  projectId: "feedback-ui-db007",
+  storageBucket: "feedback-ui-db007.appspot.com",
+  messagingSenderId: "483302669024",
+  appId: "1:483302669024:web:cfa6852f1f7d22f38f6e85",
+  measurementId: "G-M5WPGTEP3Y",
 };
 
 const app = initializeApp(firebaseConfig);
