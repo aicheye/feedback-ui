@@ -1,5 +1,9 @@
 import { initializeApp } from "firebase/app";
 import {
+  initializeAppCheck,
+  ReCaptchaEnterpriseProvider,
+} from "firebase/app-check";
+import {
   collection,
   deleteDoc,
   doc,
@@ -23,6 +27,11 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const appCheck = initializeAppCheck(app, {
+  provider: new ReCaptchaEnterpriseProvider({
+    siteKey: "6Ld3dvMpAAAAAIqGtqXP62iSHG5NOZvG-BBWMhhD",
+  }),
+});
 const db = getFirestore(app);
 const coll = collection(db, "feedback");
 
